@@ -1,0 +1,75 @@
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.slideref {
+  display: flex;
+  overflow-x: hidden;
+  gap: 10px;
+  scroll-behavior: smooth;
+}
+
+.slide {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.leftarrow {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.notAllowed {
+  cursor: not-allowed;
+}
+
+.rightarrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px 0 0 5px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.spandot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.activeDot {
+  background: blue;
+}
+
+.inactiveDot {
+  background: lightgray;
+}

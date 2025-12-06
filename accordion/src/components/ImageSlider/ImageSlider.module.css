@@ -1,0 +1,79 @@
+/* Container */
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Slider track */
+.sliderTrack {
+  display: flex;
+  overflow-x: hidden;
+  gap: 10px;
+  scroll-behavior: smooth;
+}
+
+/* Image styling */
+.imageCard {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Arrow buttons */
+.arrowBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.leftArrow {
+  left: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.rightArrow {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+/* Arrow cursor states */
+.arrowDisabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.arrowEnabled {
+  cursor: pointer;
+}
+
+/* Dots container */
+.dotsContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+/* Dot styles */
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.activeDot {
+  background: blue;
+}
+
+.inactiveDot {
+  background: lightgrey;
+}
